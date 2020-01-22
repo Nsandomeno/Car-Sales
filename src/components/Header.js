@@ -15,13 +15,8 @@ const Header = props => {
 
 const mapStateToProps = (state) => {
   return {
-    car: {
-      price: state.price,
-      name: state.name,
-      image: state.image,
-      features: state.features
-    }
+    car: state.car
   }
 }
 
-export default connect(mapStateToProps, {})(Header);
+export default connect(mapStateToProps, {})(Header)
